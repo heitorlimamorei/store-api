@@ -1,0 +1,217 @@
+2022-09-23T18:47:40.179Z [store-api] error: POST  -  Error: name, cpf, phone, email e  address são obrigatorios
+2022-09-24T13:42:55.956Z [store-api] error: POST  -  error: column "address" of relation "clients" does not exist
+2022-09-24T13:44:47.371Z [store-api] info: POST /client {"name":"Heitor Lima Moreira","cpf":"2051681","phone":"31973015499","email":"heitorlmoreira@gmail.com","address":"Rua SLA 22"}
+2022-09-24T13:51:36.606Z [store-api] info: POST /client {"name":"Heitor Lima Moreira","cpf":"2051681","phone":"31973015499","email":"heitorlmoreira@gmail.com","address":"Rua SLA 22"}
+2022-09-24T13:59:51.638Z [store-api] info: POST /client {"name":"Heitor Lima Moreira","cpf":"2051681","phone":"31973015499","email":"heitorlmoreira@gmail.com","address":"Rua SLA 22"}
+2022-09-24T13:59:59.694Z [store-api] error: POST  -  SyntaxError: Unexpected token } in JSON at position 117
+2022-09-24T14:22:48.249Z [store-api] info: GET /client Id:1 
+2022-09-24T14:37:07.646Z [store-api] info: DELETE /client Id:1 
+2022-09-24T14:57:04.004Z [store-api] error: PUT  -  error: could not determine data type of parameter $5
+2022-09-24T14:57:30.600Z [store-api] info: PUT /client {"name":"Heitor Lima Moreira","cpf":"2051681","phone":"31973015499","email":"heitorlmoreira2017@outlook.com","address":"Rua SLA 22","client_id":"3"}
+2022-09-24T15:00:25.866Z [store-api] info: PUT /client {"client_id":3,"name":"Heitor Lima Moreira","cpf":"2051681","phone":"31973015499","email":"heitorlmoreira2017@outlook.com","adress":"Rua SLA 22"}
+2022-09-24T15:42:59.497Z [store-api] error: POST  -  SyntaxError: Unexpected token } in JSON at position 123
+2022-09-24T15:43:08.640Z [store-api] info: POST /supplier {"name":"Microsoft","cnpj":"2051681","phone":"31973015499","email":"contact.ms.com","address":"Rua SLA 22"}
+2022-09-24T15:43:51.608Z [store-api] error: PUT  -  ReferenceError: client is not defined
+2022-09-24T15:44:32.474Z [store-api] info: PUT /supplier {"supplier_id":1,"name":"Microsoft","cnpj":"2020202022","phone":"31973015499","email":"contact.ms.com","adress":"Rua SLA 22"}
+2022-09-24T15:44:51.868Z [store-api] info: GET /supplier all suppliers 
+2022-09-24T15:45:02.043Z [store-api] info: GET /supplier Id:1 
+2022-09-24T15:45:15.753Z [store-api] info: DELETE /supplier Id:1 
+2022-09-24T15:45:38.394Z [store-api] info: POST /supplier {"name":"Microsoft","cnpj":"2020202022","phone":"31973015499","email":"contact.ms.com","address":"Rua SLA 22"}
+2022-09-25T23:03:29.561Z [store-api] error: POST  -  SyntaxError: Unexpected token } in JSON at position 128
+2022-09-25T23:03:37.004Z [store-api] info: POST /product {"name":"Xbox Series S","description":"Console de nova geração low cost","value":2000,"stock":200,"supplier_id":2}
+2022-09-25T23:03:56.423Z [store-api] info: GET /product Id:1 
+2022-09-25T23:04:00.322Z [store-api] info: GET /product all products 
+2022-09-25T23:04:29.024Z [store-api] info: PUT /product undefined
+2022-09-25T23:05:56.291Z [store-api] info: PUT /product undefined
+2022-09-25T23:06:16.406Z [store-api] info: PUT /product undefined
+2022-09-25T23:07:31.152Z [store-api] info: PUT /product undefined
+2022-09-25T23:07:37.214Z [store-api] info: GET /product all products 
+2022-09-25T23:07:49.481Z [store-api] info: POST /product {"name":"Xbox Series S","description":"Console de nova geração low cost","value":2000,"stock":199,"supplier_id":2}
+2022-09-25T23:07:52.307Z [store-api] info: GET /product all products 
+2022-09-25T23:08:14.919Z [store-api] info: PUT /product {"product_id":2,"supplier_id":2,"name":"Xbox Series S","description":"Console de nova geração low cost","value":"2000","stock":198}
+2022-09-25T23:08:17.489Z [store-api] info: GET /product all products 
+2022-09-25T23:08:31.363Z [store-api] info: DELETE /product Id:1 
+2022-09-25T23:08:38.497Z [store-api] info: GET /product all products 
+2022-09-28T18:00:11.405Z [store-api] error: POST  -  Error: Supplier_id not found
+2022-09-28T18:00:20.566Z [store-api] error: PUT  -  Error: Supplier_id not found
+2022-09-28T18:00:52.985Z [store-api] error: PUT  -  Error: Supplier_id not found
+2022-09-28T18:01:01.758Z [store-api] info: PUT /product {"product_id":2,"supplier_id":2,"name":"Xbox Series S 500gb","description":"Console de nova geração low cost","value":"2000","stock":198}
+2022-09-28T18:21:02.039Z [store-api] error: POST  -  Error: name, description, value, stock e  supplier_id são obrigatorios
+2022-09-28T18:21:10.440Z [store-api] info: POST /sale {"value":2000,"client_id":2,"product_id":2}
+2022-09-28T18:21:32.312Z [store-api] info: GET /sale Id:1 
+2022-09-28T18:22:05.021Z [store-api] info: PUT /sale {"sale_id":1,"client_id":2,"product_id":2,"value":"1900","date":"2022-09-28T03:00:00.000Z"}
+2022-09-28T18:22:19.359Z [store-api] error: DELETE  -  Error: Sale not found!
+2022-09-28T18:22:57.246Z [store-api] error: DELETE  -  Error: Client not found
+2022-09-28T18:25:07.819Z [store-api] info: POST /sale {"value":1900,"client_id":2,"product_id":2,"sale_id":1}
+2022-09-28T18:25:16.755Z [store-api] info: DELETE /sale Id:2 
+2022-09-28T18:28:43.028Z [store-api] info: POST /sale {"value":1900,"client_id":2,"product_id":2,"sale_id":1}
+2022-09-28T18:28:50.528Z [store-api] error: POST  -  Error: Client_id or product_id not found!
+2022-09-28T21:39:00.918Z [store-api] info: POST /sale {"value":1900,"client_id":2,"product_id":2,"sale_id":1}
+2022-09-28T21:40:03.777Z [store-api] error: GET  -  SyntaxError: Unexpected token } in JSON at position 16
+2022-09-28T21:40:08.294Z [store-api] info: GET /product Id:2 
+2022-09-28T21:40:19.681Z [store-api] error: PUT  -  Error: name, description, value, stock e product_id e supplier_id são obrigatorios
+2022-09-28T21:40:29.199Z [store-api] info: PUT /product {"product_id":2,"supplier_id":2,"name":"Xbox Series S 500gb","description":"Console de nova geração low cost","value":"2000","stock":1}
+2022-09-28T21:40:45.875Z [store-api] error: PUT  -  Error: name, description, value, stock e product_id e supplier_id são obrigatorios
+2022-09-28T21:41:33.410Z [store-api] info: PUT /product {"product_id":2,"supplier_id":2,"name":"Xbox Series S 500gb","description":"Console de nova geração low cost","value":"2000","stock":1}
+2022-09-28T21:41:40.474Z [store-api] error: POST  -  Error: No stock avalible
+2022-09-28T21:42:03.403Z [store-api] info: POST /sale {"value":1900,"client_id":2,"product_id":2,"sale_id":1}
+2022-09-28T21:44:38.896Z [store-api] info: POST /sale {"value":1900,"client_id":2,"product_id":2,"sale_id":1}
+2022-09-28T21:45:06.746Z [store-api] info: PUT /product {"product_id":2,"supplier_id":2,"name":"Xbox Series S 500gb","description":"Console de nova geração low cost","value":"2000","stock":100}
+2022-09-28T21:47:03.074Z [store-api] info: POST /sale {"value":1900,"client_id":2,"product_id":2,"sale_id":1}
+2022-09-28T21:50:58.023Z [store-api] info: DELETE /sale Id:7 
+2022-09-28T21:51:53.416Z [store-api] info: DELETE /sale Id:6 
+2022-09-28T21:57:27.398Z [store-api] error: PUT  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T21:58:19.103Z [store-api] error: PUT  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T21:58:23.383Z [store-api] info: PUT /product {"product_id":2,"supplier_id":2,"name":"Xbox Series S 500gb","description":"Console de nova geração low cost","value":"2000","stock":100}
+2022-09-28T21:58:44.701Z [store-api] error: PUT  -  Error: Client_id or product_id not found!
+2022-09-28T21:58:51.600Z [store-api] error: PUT  -  error: syntax error at or near "WHERE"
+2022-09-28T21:58:55.871Z [store-api] error: PUT  -  error: syntax error at or near "WHERE"
+2022-09-28T21:59:05.258Z [store-api] info: PUT /sale undefined
+2022-09-28T21:59:29.629Z [store-api] info: PUT /sale undefined
+2022-09-28T21:59:46.582Z [store-api] info: PUT /sale undefined
+2022-09-28T22:00:51.508Z [store-api] info: PUT /sale undefined
+2022-09-28T22:00:56.928Z [store-api] info: PUT /sale {"sale_id":3,"client_id":2,"product_id":2,"value":"1700","date":"2022-09-28T03:00:00.000Z"}
+2022-09-28T22:18:04.538Z [store-api] info: PUT /sale {"sale_id":3,"client_id":2,"product_id":2,"value":"1700","date":"2022-09-28T03:00:00.000Z"}
+2022-09-28T22:18:12.718Z [store-api] error: GET  -  TypeError: clientRepository.getSalesByProductId is not a function
+2022-09-28T22:19:35.226Z [store-api] info: GET /sale all sales 
+2022-09-28T22:20:09.470Z [store-api] info: POST /product {"supplier_id":2,"name":"Xbox Series x 1000gb","description":"Console de nova geração full power","value":"4000","stock":100}
+2022-09-28T22:20:42.241Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:21:21.378Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:22:44.216Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:23:07.153Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:23:44.983Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:24:09.528Z [store-api] info: GET /product Id:3 
+2022-09-28T22:24:12.390Z [store-api] info: GET /product Id:3 
+2022-09-28T22:24:33.834Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:24:40.689Z [store-api] error: POST  -  Error: Client_id or product_id not found!
+2022-09-28T22:24:46.322Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:25:59.456Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:26:05.244Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:26:51.221Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:27:03.068Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:27:15.646Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:28:19.232Z [store-api] info: GET /product Id:3 
+2022-09-28T22:28:25.908Z [store-api] error: POST  -  Error: Client_id or product_id not found!
+2022-09-28T22:28:29.915Z [store-api] error: POST  -  Error: Client_id or product_id not found!
+2022-09-28T22:33:12.792Z [store-api] error: POST  -  Error: Client_id or product_id not found!
+2022-09-28T22:33:12.932Z [store-api] info: GET /product Id:3 
+2022-09-28T22:33:13.044Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:33:13.049Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:33:13.054Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:33:56.703Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:35:18.999Z [store-api] info: GET /sale all sales 
+2022-09-28T22:35:27.011Z [store-api] info: GET /sale all sales 
+2022-09-28T22:35:29.600Z [store-api] error: GET  -  error: invalid input syntax for integer: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+2022-09-28T22:35:37.149Z [store-api] info: GET /sale all sales 
+2022-09-28T22:37:41.008Z [store-api] info: POST /sale {"value":4000,"client_id":2,"product_id":2,"sale_id":3}
+2022-09-28T22:37:46.415Z [store-api] error: POST  -  Error: Client_id or product_id not found!
+2022-09-28T22:37:51.578Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-28T22:38:00.011Z [store-api] error: POST  -  Error: Client_id or product_id not found!
+2022-09-28T22:40:29.428Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-30T01:24:28.179Z [store-api] info: GET /sale all sales 
+2022-09-30T01:24:51.773Z [store-api] info: POST /product {"supplier_id":2,"name":"Xbox Series x 1000gb","description":"Console de nova geração full power","value":"4000","stock":100}
+2022-09-30T01:25:16.914Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-30T01:28:49.795Z [store-api] info: GET /client all clients 
+2022-09-30T01:29:18.716Z [store-api] info: GET /client all clients 
+2022-09-30T01:29:26.581Z [store-api] error: POST  -  Error: name, cpf, phone, email e  address são obrigatorios
+2022-09-30T01:29:42.222Z [store-api] error: POST  -  Error: name, cpf, phone, email e  address são obrigatorios
+2022-09-30T01:30:27.033Z [store-api] info: POST /client {"name":"João Augusto","cpf":"2051681","phone":"31973015499","email":"ja@gmail.com","address":"Rua SLA 22"}
+2022-09-30T01:30:57.824Z [store-api] error: POST  -  error: insert or update on table "products" violates foreign key constraint "fk_suppliers"
+2022-09-30T01:31:05.214Z [store-api] info: POST /sale {"client_id":4,"product_id":2,"value":"4000"}
+2022-09-30T20:48:00.887Z [store-api] info: GET /client all clients 
+2022-09-30T20:48:16.491Z [store-api] info: GET /client Id:2 
+2022-09-30T20:48:40.318Z [store-api] error: POST  -  Error: name, cpf, phone, email e  address são obrigatorios
+2022-09-30T20:48:44.702Z [store-api] info: GET /client all clients 
+2022-09-30T20:49:11.808Z [store-api] info: GET /client all clients 
+2022-09-30T20:49:34.585Z [store-api] error: POST  -  Error: name, cpf, phone, email e  address são obrigatorios
+2022-09-30T20:49:49.966Z [store-api] error: POST  -  function Error() { [native code] }
+2022-09-30T20:50:41.642Z [store-api] error: POST  -  function Error() { [native code] }
+2022-09-30T20:50:47.684Z [store-api] error: POST  -  Error: name, cpf, phone, email e  address são obrigatorios
+2022-09-30T20:51:23.413Z [store-api] info: POST /client {"name":"Teste","cpf":"2051681","phone":"31973015499","email":"heitorlmoreira@gmail.com","adress":"Rua SLA 22"}
+2022-09-30T20:52:13.508Z [store-api] info: PUT /client {"clientId":5,"name":"Felipe Rese","cpf":"2051681","phone":"31973015499","email":"heitorlmoreira@gmail.com","adress":"Rua SLA 22"}
+2022-09-30T20:53:45.990Z [store-api] error: DELETE  -  SequelizeForeignKeyConstraintError: update or delete on table "clients" violates foreign key constraint "fk_clients" on table "sales"
+2022-09-30T20:54:00.121Z [store-api] error: DELETE  -  Error: Client not found
+2022-09-30T20:54:03.432Z [store-api] error: DELETE  -  SequelizeDatabaseError: invalid input syntax for integer: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+2022-09-30T20:54:07.697Z [store-api] error: DELETE  -  SequelizeForeignKeyConstraintError: update or delete on table "clients" violates foreign key constraint "fk_clients" on table "sales"
+2022-09-30T20:54:21.185Z [store-api] error: DELETE  -  SequelizeForeignKeyConstraintError: update or delete on table "clients" violates foreign key constraint "fk_clients" on table "sales"
+2022-09-30T20:54:33.761Z [store-api] info: DELETE /client Id:5 
+2022-10-01T15:22:13.554Z [store-api] info: GET /supplier all suppliers 
+2022-10-01T15:27:16.831Z [store-api] info: GET /product all products 
+2022-10-01T15:31:53.799Z [store-api] error: GET  -  ReferenceError: db is not defined
+2022-10-01T15:53:18.925Z [store-api] error: POST  -  SequelizeDatabaseError: column "supplier_id" does not exist
+2022-10-01T15:55:40.742Z [store-api] info: POST /sale {"value":4000,"date":"01/10/22","clientId":2,"productId":2}
+2022-10-01T15:55:46.229Z [store-api] info: POST /sale {"value":4000,"date":"01/10/22","clientId":2,"productId":4}
+2022-10-01T16:05:12.953Z [store-api] info: GET /sale all sales 
+2022-10-01T16:07:05.177Z [store-api] info: GET /sale all sales 
+2022-10-01T16:11:08.863Z [store-api] info: GET /sale all sales 
+2022-10-01T16:11:12.821Z [store-api] info: GET /sale all sales 
+2022-10-01T16:11:20.054Z [store-api] info: GET /sale all sales 
+2022-10-01T16:22:18.035Z [store-api] info: GET /sale all sales 
+2022-10-01T16:22:41.160Z [store-api] error: DELETE  -  SequelizeDatabaseError: column "saleId" does not exist
+2022-10-01T16:23:11.576Z [store-api] error: DELETE  -  SequelizeDatabaseError: column "saleId" does not exist
+2022-10-01T16:23:33.384Z [store-api] info: DELETE /sale Id:5 
+2022-10-01T16:23:40.543Z [store-api] info: GET /sale all sales 
+2022-10-01T16:29:24.140Z [store-api] error: PUT  -  Error: name, cnpj, phone, email e clientId e address são obrigatorios
+2022-10-01T16:29:54.337Z [store-api] error: PUT  -  Error: name, cnpj, phone, email e clientId e address são obrigatorios
+2022-10-01T16:30:33.075Z [store-api] error: PUT  -  Error: name, cnpj, phone, email e clientId e address são obrigatorios
+2022-10-01T16:30:34.600Z [store-api] error: PUT  -  Error: name, cnpj, phone, email e clientId e address são obrigatorios
+2022-10-01T16:32:00.623Z [store-api] error: PUT  -  Error: name, cnpj, phone, email e clientId e address são obrigatorios
+2022-10-05T19:38:30.644Z [store-api] error: GET  -  SequelizeDatabaseError: invalid input syntax for integer: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+2022-10-05T19:38:33.635Z [store-api] info: GET /sale all sales 
+2022-10-05T19:38:47.789Z [store-api] info: GET /sale all sales 
+2022-10-05T19:38:52.000Z [store-api] info: GET /sale all sales 
+2022-10-05T19:38:54.298Z [store-api] info: GET /sale all sales 
+2022-10-05T19:38:56.217Z [store-api] info: GET /sale all sales 
+2022-10-05T19:38:57.097Z [store-api] info: GET /sale all sales 
+2022-10-05T19:38:59.098Z [store-api] info: GET /sale all sales 
+2022-10-05T19:39:06.566Z [store-api] info: GET /sale all sales 
+2022-10-05T19:39:10.184Z [store-api] info: GET /sale all sales 
+2022-10-05T19:39:43.484Z [store-api] info: GET /supplier all suppliers 
+2022-10-05T19:40:30.231Z [store-api] error: POST  -  Error: name, cnpj, phone, email e  address são obrigatorios
+2022-10-05T19:40:38.668Z [store-api] info: GET /supplier all suppliers 
+2022-10-05T19:40:50.068Z [store-api] error: POST  -  Error: name, cnpj, phone, email e  address são obrigatorios
+2022-10-05T19:41:07.739Z [store-api] error: POST  -  Error: name, cnpj, phone, email e  address são obrigatorios
+2022-10-05T19:41:16.957Z [store-api] error: POST  -  function Error() { [native code] }
+2022-10-05T19:41:41.573Z [store-api] error: POST  -  Error: name, cnpj, phone, email e  address são obrigatorios
+2022-10-05T19:41:51.889Z [store-api] info: GET /supplier all suppliers 
+2022-10-05T20:00:49.991Z [store-api] error: POST  -  function Error() { [native code] }
+2022-10-05T20:03:03.109Z [store-api] info: POST /sale {"value":4000,"date":"01/10/22","clientId":2,"productId":4}
+2022-10-05T21:54:02.594Z [store-api] info: GET /product all products 
+2022-10-05T21:55:09.827Z [store-api] error: POST  -  MongoServerError: bad auth : Authentication failed.
+2022-10-05T21:56:26.597Z [store-api] error: POST  -  MongoServerError: bad auth : Authentication failed.
+2022-10-05T21:58:14.440Z [store-api] error: POST  -  MongoServerError: bad auth : Authentication failed.
+2022-10-05T21:58:17.120Z [store-api] error: POST  -  MongoServerError: bad auth : Authentication failed.
+2022-10-05T21:58:41.733Z [store-api] error: POST  -  MongoServerError: bad auth : Authentication failed.
+2022-10-05T21:59:27.537Z [store-api] info: POST /product/info {"productId":"4","height":"35cm","review":["Execelente console, alta performance!"],"_id":"633dfe3f19f306c12f5706ce"}
+2022-10-05T22:14:46.482Z [store-api] info: POST /product/info {"productId":"4","height":"35cm","category":"Consoles","review":["Execelente console, alta performance!"],"_id":"633e01d6b0ff3ff5a24e2bf7"}
+2022-10-05T22:15:33.967Z [store-api] info: POST /product/info {"productId":"4","height":"35cm","category":"Consoles","review":["Execelente console, alta performance!"]}
+2022-10-05T22:27:26.808Z [store-api] info: GET /product Id:4 
+2022-10-05T22:29:28.128Z [store-api] info: GET /product Id:4 
+2022-10-05T22:30:12.287Z [store-api] info: GET /product Id:4 
+2022-10-05T22:34:33.235Z [store-api] info: POST /product/info {"productId":"4","height":"35cm","category":"Consoles","review":["Execelente console, alta performance!"],"_id":"633e0679bee9dbe05606a2d7"}
+2022-10-05T22:36:04.090Z [store-api] info: POST /product/info {"productId":4,"height":"35cm","category":"Consoles","review":["Execelente console, alta performance!"],"_id":"633e06d4757073597e5dd88e"}
+2022-10-05T22:36:17.531Z [store-api] info: GET /product Id:4 
+2022-10-05T22:57:37.792Z [store-api] error: POST  -  TypeError: Cannot read properties of null (reading 'review')
+2022-10-05T22:58:49.678Z [store-api] error: POST  -  Error: ProductId e review são obrigatórios
+2022-10-05T22:58:53.410Z [store-api] error: POST  -  TypeError: Cannot read properties of null (reading 'review')
+2022-10-05T23:00:14.426Z [store-api] info: POST /product/info/review {"productId":4,"review":{"nome":"Heitor","text":"Console muito bom!"}}
+2022-10-06T19:24:52.893Z [store-api] error: POST  -  TypeError: Cannot read properties of null (reading 'exec')
+2022-10-06T19:26:21.888Z [store-api] error: GET  -  SequelizeDatabaseError: invalid input syntax for integer: "info"
+2022-10-06T19:26:31.369Z [store-api] error: GET  -  SequelizeDatabaseError: invalid input syntax for integer: "info"
+2022-10-06T19:27:34.956Z [store-api] error: GET  -  SequelizeDatabaseError: invalid input syntax for integer: "info"
+2022-10-06T19:27:43.551Z [store-api] error: GET  -  SequelizeDatabaseError: invalid input syntax for integer: "info"
+2022-10-06T19:28:34.332Z [store-api] error: GET  -  TypeError: Cannot read properties of null (reading 'exec')
+2022-10-06T19:28:38.817Z [store-api] info: GET /product all products 
+2022-10-06T19:28:46.373Z [store-api] error: GET  -  TypeError: Cannot read properties of null (reading 'exec')
+2022-10-06T19:29:29.631Z [store-api] error: GET  -  TypeError: Cannot read properties of null (reading 'exec')
+2022-10-06T19:30:35.853Z [store-api] info: GET /product Id:3 
+2022-10-06T19:30:45.991Z [store-api] info: GET /product Id:4 
+2022-10-06T19:32:54.237Z [store-api] info: GET /product Id:4 
+2022-10-06T19:36:37.770Z [store-api] info: POST /product/info {"productId":4,"height":"35cm","width":"15cm","depth":"5cm","category":"consoles","review":{"nome":"Heitor","text":"Console muito bom!"}}
+2022-10-06T19:36:47.862Z [store-api] info: GET /product Id:4 
+2022-10-06T19:37:31.637Z [store-api] info: POST /product/info {"productId":4,"height":"35cm","width":"15cm","depth":"5cm","category":"consoles","review":{"nome":"Heitor","text":"Console muito bom!"}}
+2022-10-06T19:38:46.296Z [store-api] info: POST /product/info {"productId":4,"height":"35cm","width":"15cm","depth":"5cm","category":"consoles","review":{"nome":"Heitor","text":"Console muito bom!"}}
+2022-10-06T19:46:00.355Z [store-api] info: POST /product/info {"productId":4,"height":"35cm","width":"15cm","depth":"5cm","category":"consoles","review":{"nome":"Heitor","text":"Console muito bom!"}}
+2022-10-06T19:49:15.868Z [store-api] info: POST /product/info {"productId":4,"height":"35cm","width":"15cm","depth":"5cm","category":"consoles","review":{"nome":"Heitor","text":"Console muito bom!"}}
+2022-10-07T00:19:35.625Z [store-api] info: GET /product all products 
+2022-10-07T00:19:43.044Z [store-api] info: GET /product Id:3 
