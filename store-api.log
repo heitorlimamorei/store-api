@@ -215,3 +215,4 @@
 2022-10-06T19:49:15.868Z [store-api] info: POST /product/info {"productId":4,"height":"35cm","width":"15cm","depth":"5cm","category":"consoles","review":{"nome":"Heitor","text":"Console muito bom!"}}
 2022-10-07T00:19:35.625Z [store-api] info: GET /product all products 
 2022-10-07T00:19:43.044Z [store-api] info: GET /product Id:3 
+2023-08-27T16:36:20.784Z [store-api] info: GET /client all clients 

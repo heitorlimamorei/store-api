@@ -28,4 +28,4 @@ app.use((err, req, res, next) => {
   logger.error(`${req.method} ${req.baseUrl} -  ${err}`)
   res.status(400).send({error: err.message});
 })
-app.listen(3000, () => console.log("Server listening on port 3000"));
+app.listen(process.env.PORT, () => console.log(`Server listening on port ${process.env.PORT}`));
